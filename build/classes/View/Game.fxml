@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GameController">
+   <children>
+      <ImageView fitHeight="524.0" fitWidth="824.0" layoutX="-7.0" layoutY="-7.0">
+         <image>
+            <Image url="@../images/background.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="live3lbl" alignment="CENTER" layoutX="749.0" layoutY="-6.0" prefHeight="50.0" prefWidth="54.0" text="X" textFill="#ff9100">
+         <font>
+            <Font name="Jokerman" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="live2lbl" alignment="CENTER" layoutX="699.0" layoutY="-6.0" prefHeight="50.0" prefWidth="54.0" text="X" textFill="#ff9100">
+         <font>
+            <Font name="Jokerman" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="live1lbl" alignment="CENTER" layoutX="649.0" layoutY="-6.0" prefHeight="50.0" prefWidth="54.0" text="X" textFill="#ff9100">
+         <font>
+            <Font name="Jokerman" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="55.0" layoutY="-8.0" prefHeight="74.0" prefWidth="101.0" text="0" textFill="#ff9100">
+         <font>
+            <Font name="Jokerman" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="bestScore" alignment="CENTER" layoutX="42.0" layoutY="44.0" prefHeight="50.0" prefWidth="54.0" text="0" textFill="#ff9100">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image1" fitHeight="131.0" fitWidth="133.0" layoutX="116.0" layoutY="355.0" onMouseEntered="#slice1" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="image2" fitHeight="131.0" fitWidth="133.0" layoutX="296.0" layoutY="365.0" onMouseEntered="#slice2" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="image3" fitHeight="131.0" fitWidth="133.0" layoutX="456.0" layoutY="365.0" onMouseEntered="#slice3" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="image4" fitHeight="131.0" fitWidth="133.0" layoutX="637.0" layoutY="365.0" onMouseEntered="#slice4" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="image5" fitHeight="131.0" fitWidth="133.0" layoutX="7.0" layoutY="365.0" onMouseEntered="#slice5" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <Label fx:id="timelbl" alignment="CENTER" layoutX="319.0" layoutY="-7.0" prefHeight="74.0" prefWidth="154.0" text="00:00" textFill="#ff9100">
+         <font>
+            <Font name="Forte" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="inclbl" alignment="CENTER" layoutX="319.0" layoutY="213.0" prefHeight="110.0" prefWidth="185.0" text="+1" textFill="#00ff77" visible="false">
+         <font>
+            <Font name="Forte" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="instructionsimage" fitHeight="533.0" fitWidth="824.0" layoutX="-7.0" layoutY="-35.0" onMouseClicked="#click" visible="false">
+         <image>
+            <Image url="@../images/instructions.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="instructionslbl" alignment="CENTER" layoutX="242.0" layoutY="456.0" onMouseClicked="#click" prefHeight="30.0" prefWidth="326.0" text="CLICK ANYWHERE TO START" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
